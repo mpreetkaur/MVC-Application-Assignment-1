@@ -29,5 +29,11 @@ namespace MVC_Application_Assignment_1.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<MVC_Application_Assignment_1.Models.Person> People { get; set; }
+
+        public System.Data.Entity.DbSet<MVC_Application_Assignment_1.Models.Car> Cars { get; set; }
+
+        public System.Data.Entity.DbSet<MVC_Application_Assignment_1.Models.House> Houses { get; set; }
     }
 }
